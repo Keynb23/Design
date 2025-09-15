@@ -1,0 +1,108 @@
+.main-feed {
+  background: var(--bg);
+  padding: 2rem 0;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.feed-side {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15%;
+  right: 0;
+}
+
+.feed-title {
+  color: var(--text);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.feed-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Post Card */
+.post-card {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 8px oklch(0.8 0.05 0 / 10%);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px oklch(0.8 0.05 0 / 20%);
+}
+
+/* Post Header */
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.post-author {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.post-time {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+/* Post Content */
+.post-content {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+/* Article Link */
+.post-article-link {
+  display: inline-block;
+  padding: 8px 12px;
+  background: var(--primary);
+  color: white;
+  font-weight: 500;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.post-article-link:hover {
+  background: var(--Secondary);
+}
+
+/* Post Image */
+.post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 8px;
+  object-fit: cover;
+}
+
+/* Post Video */
+.post-video {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 8px;
+  outline: none;
+}

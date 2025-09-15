@@ -1,0 +1,52 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content-wrapper {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%; /* Sets the columns as per your sketch */
+    gap: 20px;
+    padding: 20px;
+    padding-top: 100px; /* Add padding to account for the fixed navbar */
+}
+
+/* Profile section styles */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Main feed section */
+.main-feed-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Right sidebar */
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Additional styles for consistency and appearance */
+.sidebar-card,
+.main-card {
+    background-color: var(--bg);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: var(--bg-dark);
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}

@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, :root, html {
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    scrollbar-width: smooth;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+:root {
+    color-scheme: light dark;
+    --bg: oklch(0.9267 0 1.06);
+    --bg-dark: oklch(23.298% 0.00308 16.905);
+    --primary: oklch(59.908% 0.18214 255.539);
+    --Secondary: oklch(34.927% 0.13532 260.826);
+    --text: oklch(12.382% 0.00233 17.142);
+    --text-dark: oklch(97.614% 0.00011 271.152);
+    --text-dim: oklch(92.72% 0.00111 202.365 / 0.562);
+    --notification: oklch(0.6 0.2935 29.65);
+    --opentowork: oklch(0.7706 0.2004 148.24 / 48.23%);
+    --premium: oklch(0.7941 0.2343 86.82 / 97.2%);
+}
